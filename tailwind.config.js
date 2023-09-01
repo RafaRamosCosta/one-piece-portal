@@ -6,6 +6,9 @@ module.exports = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    fontFamily: {
+      wanted: ['Times New Roman', 'serif'],
+    },
     extend: {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
@@ -14,7 +17,8 @@ module.exports = {
         
       },
       colors: {
-        'highlightBlue': '#3AB5FF'
+        'highlightBlue': '#3AB5FF',
+        'wantedCardBg': '#D6C7AB'
       }
     },
   },
