@@ -16,7 +16,7 @@ export const MostWantedBoard = async () => {
   const mostWanted = await getMostWanted();
 
   return (
-    <aside className="flex flex-wrap justify-center gap-4 w-1/4 p-4 ml-16 mt-16" style={{ backgroundImage: `url(${wantedWallBg.src})` }}>
+    <aside className="flex flex-wrap justify-center gap-4 w-1/4 max-h-screen p-4 ml-16 mt-16" style={{ backgroundImage: `url(${wantedWallBg.src})` }}>
       <p className="text-center text-2xl font-wanted font-extrabold text-yellow-950 w-full">OS MAIS PROCURADOS</p>
       {
         mostWanted.map(({ name, reward, imageUrl }, idx) => (

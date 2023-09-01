@@ -5,7 +5,7 @@ import ProfilePicture from '../../public/assets/profile.svg';
 
 
 const NavLink = ({ href, text, isActive }) => (
-  <Link href={href} className={`text-2xl ${isActive ? 'text-highlightBlue underline' : ''}`}>
+  <Link href={href} className={`text-2xl ${isActive ? 'text-highlightBlue underline' : 'text-white'}`}>
     {text}
   </Link>
 );
